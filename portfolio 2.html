@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <style>
+      body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+    background-image: url('background.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+  }
+  
+  section p {
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 26px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+  #skills details {
+    margin-bottom: 10px;
+  }
+
+  #skills summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #skills ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  #skills ul li {
+    margin-bottom: 5px;
+  }
+    </style>
+    <link rel="stylesheet" href="Builtin template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">Portfolio</div>
+        <ul>
+          <a href="#id">
+            <li>Home</li>
+          </a>
+          <a href="#project">
+            <li>Projects</li>
+          </a>
+          
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="id">
+        <div class="container">
+          <div class="hero_content">
+            <h1>
+              <span class="hi_text">Hello!</span>  I am
+              <span class="name_text">Nabilah Afrin</span>
+            </h1>
+            <h2>Data Scientist / Junior Developer</h2>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <h2>PROJECTS</h2>
+            <div class="grid_item">
+                <h3>Parkinson’s Disease Classification</h3>
+                <p>
+                This was a thesis project. In this project chellenging 3D images of Parkinson's were preprocessed using Nipype, Nibabel and AntsPY libraries. 3D augmentation techniques were implied using pytorch framework.Developed a custom 3D residual network in order to learn both short-term and long-term memory information from 3D data.
+                </p>
+            </div>
+    
+            <div class="grid_item">
+                <h3>Face Recognition Using Deep Learning for Embedded System</h3>
+                <p>
+                In this project, dlib library was utilized for multi person face recognition. By combining with arduino, for one facial image detection, facenet recognition system was built.
+                </p>
+            </div>
+
+            <div class="grid_item">
+                <h3>Semantic Analysis of Patent Phrases using Pytorch for Binary Classification</h3>
+                <p>
+                This project was designed to perform semantic analysis in order to find correlation between phrases. Trained a binary classification model to score whether two phrase’s similarity based on the patent class.
+                </p>
+            </div>
+            
+
+            <div class="grid_item">
+                <h3>Forecasting Beijing’s Air Pollution using Multi-layer LSTM Networks</h3>
+                <p>
+                A time series forecasting model was developed using multi-layer LSTM networks to predict PM2.5 pollution levels of air.Trained the model on historical air quality data from 35 monitoring stations in Beijing, recorded from 2010 to 2015
+                </p>
+            </div>
+
+      </section>
+
+      
+      <section id="contact">
+        <div class="container">
+          <h2>Contact information</h2>
+          <div class="top_contact">
+            <div class="contact_way">
+              <a href="https://www.linkedin.com/in/nabilah-afrin-86497021a/">
+                <i class="fab fa-linkedin"></i>
+                <h3>Linkedin</h3>
+              </a>
+            </div>
+          </div>
+          <div class="bottom_contact">
+            <div class="contact_way">
+                <a href="https://github.com/nabilah-afrin">
+                  <i class="fab fa-github"></i>
+                  <h3>Github</h3>
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </main>
+
+  </body>
+</html>

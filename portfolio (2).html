@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Nabilah Afrin</title>
+  <style>
+    body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: whitesmoke;
+      background-image: url('background.avif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* CSS for header section */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* CSS for main content section */
+    .container {
+      background-color: rgb(red, green, blue);
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  section.target {
+      display: block;
+  }
+
+  section h2 {
+    margin-bottom: 15px;
+  }
+  
+  section p {
+    margin-bottom: 15px;
+  }
+
+    /* table section */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* CSS for footer section */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Media queries for responsive design */
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Nabilah Afrin</h1>
+
+    <h2>Data Scientist / Junior Developer</h2>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <div class="container">
+    <section id = "about">
+      <h2>About Me</h2>
+      <p>Data science enthusiast with demonstrative experience in particularly machine learning and computer vision. Highly proficient in data-driven neural architecture for exploiting multi-dimensional images. Interested in building a career in data science in order to explore real-world data. </p>
+    </section>
+
+    <section id = "skills">
+      <h2>Technical Skills</h2>
+      <table>
+        <tr>
+          <th>Programming Languages</th>
+          <td>
+            Python, C++
+          </td>        </tr>
+          <tr>
+            <th>Data Analysis & Visualization</th>
+            <td>Numpy, Pandas, Matplotlib, Theano</td>
+          </tr>
+          <tr>
+            <th>Machine Learning Frameworks</th>
+            <td>Tensorflow, Keras, Pytorch(Basics), Sklearn, Scipy</td>
+          </tr>
+          <tr>
+            <th>Machine Learning Tools</th>
+            <td>Anaconda, Jupyter Notebook, Jupyter Lab, Spyder</td>
+          </tr>
+          <tr>
+            <th>Operating Systems</th>
+            <td>Microsoft Windows, GNU/Linux(Ubuntu)</td>
+          </tr>
+          <tr>
+            <th>Web Technology</th>
+            <td>HTML, CSS</td>
+          </tr>
+          <tr>
+            <th>Others</th>
+            <td>Git, Latex, MS Visio</td>
+          </tr>
+      </table>
+    </section>
+
+    <section id = "experience">
+      <h2>Technical Experience</h2>
+      <table>
+        <tr>
+          <th>Position</th>
+          <th>Duration</th>
+          <th>Company</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>Trainee(Academic)</td>
+          <td>July 2019—Aug 2019</td>
+          <td>Sincos Group</td>
+          <td>Dhaka, Bangladesh</td>
+        </tr>
+      </table>
+    </section>
+  
+    <section id = "projects">
+      <h2>Projects</h2>
+      <table>
+        <tr>
+          <th>Project Name</th>
+          <th>Tools</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Parkinson’s Disease Classification</td>
+          <td>Numpy, Tensorflow, Jupyter Notebook</td>
+          <td>Preprocessed 3D images of Parkinson's and developed a custom 3D residual network for classification.</td>
+        </tr>
+        <tr>
+          <td>Face Recognition Using Deep Learning for Embedded System</td>
+          <td>Dlib, Tensorflow, Pyserial</td>
+          <td>Implemented face recognition system using dlib library and combined it with Arduino for a home automation project.</td>
+        </tr>
+      </table>
+    </section>
+    
+
+    <section id = "education">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>BSc in Mechatronics Engineering</td>
+          <td>Rajshahi University of Engineering & Technology</td>
+          <td>Rajshahi, Bangladesh</td>
+        </tr>
+      </table>
+    </section>
+    <section id = "achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>1st place in Makerthon Challenge Contest in Techfest Bangladesh 2018</li>
+        <li>1st runner up at IIT Bombay Techfest</li>
+      </ul>
+    </section>
+    
+
+    <section id = "activities">
+      <h2>Activities</h2>
+      <ul>
+        <li>Software & Networking Team Member - Team Ogrodoot</li>
+        <li>Member of Robotic Society of RUET</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Contact: Phone: 01309508338 | Email: afrinshwati@gmail.com</p>
+    <p>Dhaka, Bangladesh</p>
+    <p>LinkedIn: <a href="linkedin.com/in/nabilah-afrin">linkedin.com/in/nabilah-afrin</a></p>
+  </footer>
+</body>
+
+</html>

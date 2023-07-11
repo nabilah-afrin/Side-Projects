@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Social Network</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .post {
+      background-color: #0a6dd7;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .post-meta {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 16px;
+    }
+
+    .profile {
+      display: grid;
+      background-color: aquamarine;
+      grid-template-columns: auto 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-image {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .profile-details {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My travel blogging</h1>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>Welcome to my blog! </p>
+      <h1>Profile</h1>
+      <div class="profile">
+        <img class="profile-image" src="profile.jpg">
+        <div class="profile-details">
+          <p><strong>Name:</strong> ABC</p>
+          <p><strong>Location:</strong> Dhaka</p>
+          <p><strong>Bio:</strong> I am a traveller</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Latest Posts</h2>
+      <div class="post">
+        <div class="post-meta">
+          <span>Posted by my friend</span> | <span>2 hours ago</span>
+        </div>
+        <div class="post-content">
+          <p>This is my first post on the social network. </p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img class="post-image" src="fuji.jpg" alt="Post Image">
+        <div class="post-meta">
+          <span>Posted by me</span> | <span>1 day ago</span>
+        </div>
+        <div class="post-content">
+          <p>Here are some pictures!</p>
+          <img src="snow.jpg" alt="Mountain Image">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Friends</h2>
+      <ul>
+        <li><a href="#">Michael Jackson</a></li>
+        <li><a href="#">Sadia</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Photography</li>
+        <li>Travel</li>
+        <li>Reading</li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
